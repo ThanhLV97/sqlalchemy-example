@@ -16,5 +16,7 @@ class Item(Base):
     Args:
         Base ([type]): [description]
     """
-    Todo
-
+    id = Column('id', Integer, primary_key=True)
+    name = Column('Name', String)
+    item_type = Column('Type', String)
+    price = Column('Price', String)
